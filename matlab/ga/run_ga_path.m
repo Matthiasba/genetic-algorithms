@@ -1,4 +1,4 @@
-function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3)
+function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3)
 % usage: run_ga(x, y, 
 %               NIND, MAXGEN, NVAR, 
 %               ELITIST, STOP_PERCENTAGE, 
@@ -60,8 +60,10 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                     end
                 end
 
-                visualizeTSP(x,y,adj2path(Chrom(t,:)), minimum, ah1, gen, best, mean_fits, worst, ah2, ObjV, NIND, ah3);
+                % visualizeTSP(x,y,adj2path(Chrom(t,:)), minimum, ah1, gen, best, mean_fits, worst, ah2, ObjV, NIND, ah3);
+                visualizeTSP(x,y,Chrom(t,:), minimum, ah1, gen, best, mean_fits, worst, ah2, ObjV, NIND, ah3);
 
+                
                 if (sObjV(stopN)-sObjV(1) <= 1e-15)
                       break;
                 end          
@@ -71,7 +73,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 SelCh=select('sus', Chrom, FitnV, GGAP);
                 %recombine individuals (crossover)
                 SelCh = recombin(CROSSOVER,SelCh,PR_CROSS);
-                SelCh=mutateTSP('inversion',SelCh,PR_MUT);
+                SelCh=mutateTSP_path('inversion',SelCh,PR_MUT);
                 %evaluate offspring, call objective function
                 ObjVSel = tspfun_path(SelCh,Dist);
                 %reinsert offspring into population
