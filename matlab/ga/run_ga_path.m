@@ -34,7 +34,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
             Chrom=zeros(NIND,NVAR); % every row contains a representation of a tour
             for row=1:NIND
                 % randperm(NVAR) is a random permutation of the vector 1:NVAR
-                Chrom(row,:)=path2adj(randperm(NVAR)); 
+                Chrom(row,:)=randperm(NVAR); 
                 %Chrom(row,:)=randperm(NVAR);
             end
             gen=0; % index at generation while loop
