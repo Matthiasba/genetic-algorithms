@@ -19,7 +19,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
 % ah1, ah2, ah3: axes handles to visualise tsp
 {NIND MAXGEN NVAR ELITIST STOP_PERCENTAGE PR_CROSS PR_MUT CROSSOVER LOCALLOOP}
         t_loop = zeros(5,2);
-        for i_loop = 1:5
+        for i = 1:5
             tic;
             GGAP = 1 - ELITIST;
             mean_fits=zeros(1,MAXGEN+1);
@@ -81,14 +81,13 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 %increment generation counter
                 gen=gen+1;            
             end
-            t_loop(i_loop,1)=toc;
-            t_loop(i_loop,2)=best(end);
+            t(i,1)=toc;
+            t(i,2)=best(end);
         end
-        t_loop
         disp('Average time: ')
-        time_avg = mean(t_loop(:,1))
+        time_avg = mean(t(:,1))
         disp('Average best: ')
-        best_avg = mean(t_loop(:,2))
+        best_avg = mean(t(:,2))
         
         
         
