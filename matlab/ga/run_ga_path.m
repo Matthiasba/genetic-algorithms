@@ -41,7 +41,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
             % number of individuals of equal fitness needed to stop
             stopN=ceil(STOP_PERCENTAGE*NIND);
             % evaluate initial population
-            ObjV = tspfun(Chrom,Dist);
+            ObjV = tspfun_path(Chrom,Dist);
             % ObjV is a column vector containing the fitness values of the
             % initial candidates.
             best=zeros(1,MAXGEN);
@@ -73,7 +73,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 SelCh = recombin(CROSSOVER,SelCh,PR_CROSS);
                 SelCh=mutateTSP('inversion',SelCh,PR_MUT);
                 %evaluate offspring, call objective function
-                ObjVSel = tspfun(SelCh,Dist);
+                ObjVSel = tspfun_path(SelCh,Dist);
                 %reinsert offspring into population
                 [Chrom ObjV]=reins(Chrom,SelCh,1,1,ObjV,ObjVSel);
 
