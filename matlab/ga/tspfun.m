@@ -3,6 +3,8 @@
 % Implementation of the TSP fitness function
 %	Phen contains the phenocode of the matrix coded in adjacency
 %	representation
+%   Phen is a matrix of size NIND x NVAR with at every row the
+%   representation of a tour.
 %	Dist is the matrix with precalculated distances between each pair of cities
 %	ObjVal is a vector with the fitness values for each candidate tour (=each row of Phen)
 %

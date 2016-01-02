@@ -30,16 +30,19 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
             end
         end
         % initialize population
-        Chrom=zeros(NIND,NVAR);
+        Chrom=zeros(NIND,NVAR); % every row contains a representation of a tour
         for row=1:NIND
-        	Chrom(row,:)=path2adj(randperm(NVAR));
+            % randperm(NVAR) is a random permutation of the vector 1:NVAR
+        	Chrom(row,:)=path2adj(randperm(NVAR)); 
             %Chrom(row,:)=randperm(NVAR);
         end
-        gen=0;
+        gen=0; % index at generation while loop
         % number of individuals of equal fitness needed to stop
         stopN=ceil(STOP_PERCENTAGE*NIND);
         % evaluate initial population
         ObjV = tspfun(Chrom,Dist);
+        % ObjV is a column vector containing the fitness values of the
+        % initial candidates.
         best=zeros(1,MAXGEN);
         % generational loop
         while gen<MAXGEN
@@ -48,6 +51,8 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
         	minimum=best(gen+1);
             mean_fits(gen+1)=mean(ObjV);
             worst(gen+1)=max(ObjV);
+            
+            % find index t of minimum
             for t=1:size(ObjV,1)
                 if (ObjV(t)==minimum)
                     break;
@@ -61,7 +66,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
             end          
         	%assign fitness values to entire population
         	FitnV=ranking(ObjV);
-        	%select individuals for breeding
+        	%select individuals for breeding 
         	SelCh=select('sus', Chrom, FitnV, GGAP);
         	%recombine individuals (crossover)
             SelCh = recombin(CROSSOVER,SelCh,PR_CROSS);
