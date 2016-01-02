@@ -2,8 +2,8 @@ function Offspring = order_crossover(Parents)
 
 n = size(Parents,2);
 
-rn1 = randi(n);
-delta = randi(n-1); % aantal getallen gekopied
+rn1 = randi(n)
+delta = randi(n-1) % aantal getallen gekopied
 Offspring = zeros(2,n);
 
 j = rn1;
@@ -39,6 +39,8 @@ while j ~= rn1
     end
     Offspring(1, j) = cand1;
     Offspring(2, j) = cand2;
+    offspring1_index = offspring1_index +1;
+    offspring2_index = offspring2_index +1;
     if j == n
         j = 1;
     else
