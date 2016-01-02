@@ -82,7 +82,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 gen=gen+1;            
             end
             t_loop(i_loop,1)=toc;
-            t_loop(i_loop,2)=best(end);
+            t_loop(i_loop,2)=min(best(1, gen));
         end
         t_loop
         disp('Average time: ')
