@@ -14,6 +14,7 @@ PR_MUT=.05;       % probability of mutation
 LOCALLOOP=0;      % local loop removal
 CROSSOVER = 'xalt_edges';  % default crossover operator
 REPRESENTATION = 'adjecency'; %default representation
+SELECTION = 'sus'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % read an existing population
@@ -98,6 +99,7 @@ elitslider = uicontrol(ph,'Style','slider','Max',100,'Min',0,'Value',round(ELITI
 elitsliderv = uicontrol(ph,'Style','text','String',round(ELITIST*100),'Position',[280 80 50 20]);
 crossover = uicontrol(ph,'Style','popupmenu', 'String',{'xalt_edges'}, 'Value',1,'Position',[10 50 130 20],'Callback',@crossover_Callback);
 representation = uicontrol(ph,'Style','popupmenu', 'String',{'adjecency', 'path'}, 'Value',1,'Position',[160 50 130 20],'Callback',@representation_Callback);
+selection = uicontrol(ph,'Style','popupmenu', 'String',{'sus', 'proportional', 'tournament'}, 'Value',1,'Position',[310 50 130 20],'Callback',@parent_selection_Callback);
 %inputbutton = uicontrol(ph,'Style','pushbutton','String','Input','Position',[55 10 70 30],'Callback',@inputbutton_Callback);
 runbutton = uicontrol(ph,'Style','pushbutton','String','START','Position',[0 10 50 30],'Callback',@runbutton_Callback);
 
@@ -180,6 +182,13 @@ set(fh,'Visible','on');
         REPRESENTATION = representations(representation_value);
         REPRESENTATION = REPRESENTATION{1};
     end
+
+function representation_Callback(hObject,eventdata)
+        selection_value = get(hObject,'Value');
+        selections = get(hObject,'String');
+        SELECTION = representations(representation_value);
+        SELECTION = SELECTION{1};
+    end
     function runbutton_Callback(hObject,eventdata)
         %set(ncitiesslider, 'Visible','off');
         set(nindslider,'Visible','off');
@@ -188,7 +197,7 @@ set(fh,'Visible','on');
         set(crossslider,'Visible','off');
         set(elitslider,'Visible','off');
         if(strcmp(REPRESENTATION, 'adjecency'))
-            run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3);
+            run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION);
         else
             run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, 'path_xo', LOCALLOOP, ah1, ah2, ah3);
         end
