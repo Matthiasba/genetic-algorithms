@@ -199,7 +199,7 @@ function selection_Callback(hObject,eventdata)
         if(strcmp(REPRESENTATION, 'adjecency'))
             run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION);
         else
-            run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, 'path_xo', LOCALLOOP, ah1, ah2, ah3);
+            run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, 'path_xo', LOCALLOOP, ah1, ah2, ah3, SELECTION);
         end
         
         end_run();
