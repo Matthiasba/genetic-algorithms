@@ -79,7 +79,7 @@ function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROS
                 %reinsert offspring into population
                 [Chrom ObjV]=reins(Chrom,SelCh,1,1,ObjV,ObjVSel);
 
-                Chrom = tsp_ImprovePopulation(NIND, NVAR, Chrom,LOCALLOOP,Dist);
+                Chrom = tsp_ImprovePopulation_path(NIND, NVAR, Chrom,LOCALLOOP,Dist);
                 %increment generation counter
                 gen=gen+1;            
             end
