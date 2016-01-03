@@ -14,7 +14,7 @@ PR_MUT=.05;       % probability of mutation
 LOCALLOOP=0;      % local loop removal
 CROSSOVER = 'xalt_edges';  % default crossover operator
 REPRESENTATION = 'adjecency'; %default representation
-SELECTION = 'sus'
+SELECTION = 'ranking';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % read an existing population
@@ -99,7 +99,7 @@ elitslider = uicontrol(ph,'Style','slider','Max',100,'Min',0,'Value',round(ELITI
 elitsliderv = uicontrol(ph,'Style','text','String',round(ELITIST*100),'Position',[280 80 50 20]);
 crossover = uicontrol(ph,'Style','popupmenu', 'String',{'xalt_edges'}, 'Value',1,'Position',[10 50 130 20],'Callback',@crossover_Callback);
 representation = uicontrol(ph,'Style','popupmenu', 'String',{'adjecency', 'path'}, 'Value',1,'Position',[160 50 130 20],'Callback',@representation_Callback);
-selection = uicontrol(ph,'Style','popupmenu', 'String',{'sus', 'proportional', 'tournament'}, 'Value',1,'Position',[310 50 130 20],'Callback',@selection_Callback);
+selection = uicontrol(ph,'Style','popupmenu', 'String',{'ranking', 'proportional', 'tournament'}, 'Value',1,'Position',[310 50 130 20],'Callback',@selection_Callback);
 %inputbutton = uicontrol(ph,'Style','pushbutton','String','Input','Position',[55 10 70 30],'Callback',@inputbutton_Callback);
 runbutton = uicontrol(ph,'Style','pushbutton','String','START','Position',[0 10 50 30],'Callback',@runbutton_Callback);
 

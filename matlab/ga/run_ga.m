@@ -65,10 +65,23 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 if (sObjV(stopN)-sObjV(1) <= 1e-15)
                       break;
                 end          
-                %assign fitness values to entire population
-                FitnV=ranking(ObjV);
-                %select individuals for breeding 
-                SelCh=select('sus', Chrom, FitnV, GGAP);
+                % assign fitness values and select individuals for breeding 
+                switch SELECTION
+                    case 'ranking'
+                        FitnV = ranking(ObjV); % ranking selection
+                        % select individuals for breeding 
+                        SelCh = select('sus', Chrom, FitnV, GGAP);
+                    case 'proportional'
+                        FitnV = FPS(ObjV); % proportional fitness selection
+                        % select individuals for breeding 
+                        SelCh = select('sus', Chrom, FitnV, GGAP);
+                    case 'tournament'
+                        % still to implement, see code jasper
+                    otherwise
+                        error('SELECTION string is not an option')
+                end
+                % select individuals for breeding 
+                % SelCh=select('sus', Chrom, FitnV, GGAP);
                 %recombine individuals (crossover)
                 SelCh = recombin(CROSSOVER,SelCh,PR_CROSS);
                 SelCh=mutateTSP('inversion',SelCh,PR_MUT);
