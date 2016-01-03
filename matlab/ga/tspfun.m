@@ -1,4 +1,4 @@
-A%
+%
 % ObjVal = tspfun(Phen, Dist)
 % Implementation of the TSP fitness function
 %	Phen contains the phenocode of the matrix coded in adjacency
