@@ -1,4 +1,4 @@
-function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION)
+function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION, TSIZE)
 % usage: run_ga(x, y, 
 %               NIND, MAXGEN, NVAR, 
 %               ELITIST, STOP_PERCENTAGE, 
@@ -76,7 +76,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                         % select individuals for breeding 
                         SelCh = select('sus', Chrom, FitnV, GGAP);
                     case 'tournament'
-                        % still to implement, see code jasper
+                         SelCh = tournament_selection(Chrom, ObjV, TSIZE, GGAP);
                     otherwise
                         error('SELECTION string is not an option')
                 end

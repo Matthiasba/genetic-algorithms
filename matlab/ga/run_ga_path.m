@@ -1,4 +1,4 @@
-function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION)
+function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR_MUT, CROSSOVER, LOCALLOOP, ah1, ah2, ah3, SELECTION, TSIZE)
 % usage: run_ga(x, y, 
 %               NIND, MAXGEN, NVAR, 
 %               ELITIST, STOP_PERCENTAGE, 
@@ -78,8 +78,8 @@ function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROS
                         FitnV = FPS(ObjV); % proportional fitness selection
                         % select individuals for breeding 
                         SelCh = select('sus', Chrom, FitnV, GGAP);
-                    case 'tournament'
-                        % still to implement, see code jasper
+                    case 'tournament'                        
+                        SelCh = tournament_selection(Chrom, ObjV, TSIZE, GGAP);
                         
                     otherwise
                         error('SELECTION string is not an option')

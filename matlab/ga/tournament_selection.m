@@ -37,11 +37,11 @@ function [ SelCh ] = tournament_selection( Chrom, ObjV, TSIZE, GGAP)
    NSel=max(floor(NindCh*GGAP+.5),2);
 
     % Select individuals from population
-   SelCh = [];
+   SelCh = zeros(NSel, Nvar);
    for irun = 1:NSel,
       [sample, idx] = datasample(ObjV, TSIZE, 'Replace', false);
-      [M, I] = max(sample);
-      SelCh = [SelCh ; Chrom(idx(I(1)), :)];
+      [M, I] = min(sample);
+      SelCh(irun, :) = Chrom(idx(I(1)), :);
       
       
    end
