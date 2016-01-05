@@ -1,5 +1,16 @@
 
 
-\section{Answer Question 3}
+\section{Path Representation}
 
-Write the answer for question 3 in this file
+In this section an adjusted version of the existing genetic algorithm will be studied. The tours in the Traveling Salesman Problem will not be represented anymore by the adjacency representation. The path representation will be used instead. The $i$th element of the path representation denotes the $i$th city visited. This representation needs appropriate recombination and mutation operators. We chose to use the order crossover operator as recombination operator. For mutation we chose to use the inversion operator. 
+\newline
+\newline
+The order crossover operator recombines the genes of two parents to produce two children. To produce the first offspring a randomly chosen segment of the first parent is copied into the offspring. Secondly information about the relative order of the second parent is used to make the representation of the first offspring complete. The second offspring is created in an analogous manner, with the parent roles reversed. The working process of the order crossover operator is shown below:
+
+\begin{enumerate}
+  \item Choose two crossover points at random, and copy the segment between them from the first parent into the first offspring.
+  \item Starting from the second crossover point in the second parent, and copy the remaining unused numbers into the first offspring in the order that they appear in the second parent.
+  \item Create the second offspring in an analogous manner, with the parent roles reversed.
+\end{enumerate}
+
+The used mutation operator is the inversion mutation operator. This operator works by randomly selecting two positions in the chromosome and reversing the order in which the values appear between those positions. For more information about these operators we refer to \cite{handboek}. The implementation of the order crossover operator is shown in the appendices. The path representation and the inversion mutation operator were already implemented in the template Matlab program for the TSP.

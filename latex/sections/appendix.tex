@@ -3,24 +3,30 @@
 
 \begin{appendices}
 
-The commented text below shows the appendix of another project that also contains Matlab code
-
 %In de appendix bevind zich een deel van de code die gebruikt werd voor het bekomen van bovenstaande resultaten.
-%De bijgevoegde code is tot een minimum gehouden, enkel de gebruikte algoritme werden toegevoegd en een script om telkens hun gebruik te illustreren.
+%De bijgevoegde code is tot een minimum gehouden, enkel de code die bijna volledig door onszelf 
 %Het volledige project, inclusief de matlab bestanden om elk van bovenstaande resultaten te genereren kan gevonden worden op \href{https://github.com/double2double/wavelets}{https://github.com/double2double/wavelets}
-%
-%
-%
-%
-%\section*{Matlab Code}
-%
-%
-%\subsection*{Code voor ruisreductie}
-%
-%\lstinputlisting{../src/matlab/den_image.m}
-%\subsubsection*{Voorbeeld code voor gebruik van denoising.}
-%In het onderstaande script wordt aan de hand van \verb|fminunc| de optimale waarden voor de therhold waarden bepaald.
-%De cost functie die wordt gebruikt is de euclidische afstand tussen de originele en de gefilterde afbeelding.
+
+In the appendices you can find a small part of the code that is used to obtain the results discussed in this report. To make sure that the appendix is not extremely long, only the code is shown that is completely written by ourselves. 
+
+\section*{Matlab Code}
+
+
+\subsection*{Implementation Order Crossover}
+This function recombines two parents to create two children with the use of Order Crossover. 
+\lstinputlisting{../code_appendix/order_crossover.m}
+
+
+\subsection*{Implementation fitness function for path representation}
+This function compute the fitness values corresponding to the candidate solutions in path representation.
+\lstinputlisting{../code_appendix/tspfun_path.m}
+
+
+
+
+
+
+
 %\lstinputlisting{../src/matlab/example_denoising.m}
 %
 %\subsection*{Code voor inpainting}
