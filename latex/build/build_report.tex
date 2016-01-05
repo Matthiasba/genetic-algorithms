@@ -1,0 +1,38 @@
+
+% file that contains all the usepackages etc...
+\input{../sections/preamble.tex}
+
+\title{Genetic Algorithms and Evolutionary Computing \\ Project}
+\author{ Jasper Hawinkel \& Matthias Baeten }
+\date{ 11 january 2016}
+
+% source code listing
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    %emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+
+\begin{document}
+
+	\maketitle
+	\input{../sections/question_2.tex}
+	\input{../sections/question_3.tex}
+	\input{../sections/question_4.tex}
+	\input{../sections/question_optional.tex}
+	\FloatBarrier
+	\input{../sections/appendix.tex}
+	
+\end{document}
