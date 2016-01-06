@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.11)  6 JAN 2016 02:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.11)  6 JAN 2016 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,10 +918,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `build_report.toc'.
 
- [1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (../sec
-tions/question_2.tex) (../sections/question_3.tex
+ (../sections/question_2.tex) (../sections/question_3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--1
 
  []
@@ -936,7 +933,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
+[1
 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 16--26
 
  []
@@ -951,7 +950,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--26
 
  []
 
-[2]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 32.
@@ -961,12 +959,100 @@ Overfull \hbox (39.81291pt too wide) in paragraph at lines 34--61
  [][] 
  []
 
-) (../sections/question_4.tex) (../sections/question_optional.tex)
-(../sections/references.tex) [3] [4] (../sections/appendix.tex
+[2]) (../sections/question_4.tex [3]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 15.
+
+
+<../figures/figures_question_4/belgium_tour_path.png, id=67, 465.74pt x 370.383
+74pt>
+File: ../figures/figures_question_4/belgium_tour_path.png Graphic file (type pn
+g)
+ <use ../figures/figures_question_4/belgium_tour_path.png>
+Package pdftex.def Info: ../figures/figures_question_4/belgium_tour_path.png us
+ed on input line 19.
+(pdftex.def)             Requested size: 200.3085pt x 159.2958pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+
+ []
+
+
+<../figures/figures_question_4/belgium_tour_gen.png, id=69, 485.815pt x 375.402
+5pt>
+File: ../figures/figures_question_4/belgium_tour_gen.png Graphic file (type png
+)
+ <use ../figures/figures_question_4/belgium_tour_gen.png>
+Package pdftex.def Info: ../figures/figures_question_4/belgium_tour_gen.png use
+d on input line 25.
+(pdftex.def)             Requested size: 204.85844pt x 158.29807pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 33.
+
+
+<../figures/figures_question_4/cities380_4_path.png, id=70, 468.75125pt x 368.3
+7625pt>
+File: ../figures/figures_question_4/cities380_4_path.png Graphic file (type png
+)
+ <use ../figures/figures_question_4/cities380_4_path.png>
+Package pdftex.def Info: ../figures/figures_question_4/cities380_4_path.png use
+d on input line 35.
+(pdftex.def)             Requested size: 318.66946pt x 250.4307pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 40.
+
+
+<../figures/figures_question_4/cities380_4_gen.png, id=71, 489.83pt x 373.395pt
+>
+File: ../figures/figures_question_4/cities380_4_gen.png Graphic file (type png)
+
+ <use ../figures/figures_question_4/cities380_4_gen.png>
+Package pdftex.def Info: ../figures/figures_question_4/cities380_4_gen.png used
+ on input line 42.
+(pdftex.def)             Requested size: 318.66946pt x 242.92607pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 47.
+
+
+<../figures/figures_question_4/benchmark_131_path.png, id=74, 486.81876pt x 363
+.3575pt>
+File: ../figures/figures_question_4/benchmark_131_path.png Graphic file (type p
+ng)
+ <use ../figures/figures_question_4/benchmark_131_path.png>
+Package pdftex.def Info: ../figures/figures_question_4/benchmark_131_path.png u
+sed on input line 49.
+(pdftex.def)             Requested size: 318.66946pt x 237.85397pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 54.
+
+
+<../figures/figures_question_4/benchmark_131_gen.png, id=75, 490.83376pt x 373.
+395pt>
+File: ../figures/figures_question_4/benchmark_131_gen.png Graphic file (type pn
+g)
+ <use ../figures/figures_question_4/benchmark_131_gen.png>
+Package pdftex.def Info: ../figures/figures_question_4/benchmark_131_gen.png us
+ed on input line 56.
+(pdftex.def)             Requested size: 318.66946pt x 242.43039pt.
+ [4 <../figures/figures_question_4/belgium_tour_path.png> <../figures/figures_q
+uestion_4/belgium_tour_gen.png>] [5 <../figures/figures_question_4/cities380_4_
+path.png> <../figures/figures_question_4/cities380_4_gen.png>] [6 <../figures/f
+igures_question_4/benchmark_131_path.png> <../figures/figures_question_4/benchm
+ark_131_gen.png>]) (../sections/question_optional.tex) (../sections/references.
+tex)
+(../sections/appendix.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 17.
-
-(../code_appendix/order_crossover.m
+ (../code_appendix/order_crossover.m
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 15.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
@@ -974,37 +1060,39 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 15.
- [5])
-(../code_appendix/tspfun_path.m)) [6]
+ [7])
+(../code_appendix/tspfun_path.m [8])) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (./build_report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `build_report.out' has not changed.
-(rerunfilecheck)             Checksum: A675CC45A076A29799CFABA1B28799B2;263.
+(rerunfilecheck)             Checksum: 318A8F08C49353980AE1B8EBE22E4AE2;264.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 29471 strings out of 493089
- 667460 string characters out of 6134841
- 926391 words of memory out of 5000000
- 32338 multiletter control sequences out of 15000+600000
- 13967 words of font info for 55 fonts, out of 8000000 for 9000
+ 29533 strings out of 493089
+ 669500 string characters out of 6134841
+ 925392 words of memory out of 5000000
+ 32384 multiletter control sequences out of 15000+600000
+ 15515 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,77p,1366b,2247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,9n,77p,1366b,2249s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on build_report.pdf (6 pages, 107037 bytes).
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on build_report.pdf (9 pages, 1317317 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 95 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
