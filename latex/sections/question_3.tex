@@ -13,4 +13,52 @@ The order crossover operator recombines the genes of two parents to produce two 
   \item Create the second offspring in an analogous manner, with the parent roles reversed.
 \end{enumerate}
 
-The used mutation operator is the inversion mutation operator. This operator works by randomly selecting two positions in the chromosome and reversing the order in which the values appear between those positions. For more information about these operators we refer to \cite{handboek}. The implementation of the order crossover operator is shown in the appendices. The path representation and the inversion mutation operator were already implemented in the template Matlab program for the TSP.
+The used mutation operator is the inversion mutation operator. This operator works by randomly selecting two positions in the chromosome and reversing the order in which the values appear between those positions. For more information about these operators we refer to \cite{handboek}. The implementation of the order crossover operator is shown in the appendices. The code for evaluating the fitness of candidate solutions in path representation is also shown in the appendices. The path representation and the inversion mutation operator were already implemented in the template Matlab program for the TSP.
+\newline
+\newline
+Now we will perform some parameter tuning to identify proper combinations of the parameters. Remark that genetic algorithms are stochastic. That is why we can not draw any conclusions about the quality of the genetic algorithm from a single run. Therefore multiple runs will be used to estimate the quality of the genetic algorithm for a certain set of algorithm parameters. For every run the computation time and the best candidate solution found are stored. The computations times and the fitness values of the most optimal solutions found are then averaged over the amount of runs. The results of the parameter tuning process are shown in table \ref{table:question_3}.
+\newline
+\newline
+We started the parameter tuning process by using the default parameters used in the template program. These default parameters are shown in the second row of table \ref{table:question_3}. Next we studied every parameter separately by only adjusting the value of one parameters and using the default values for the other parameters. In that way we can find the optimal value for each parameter separately. At the end we then combine the optimal parameter values and hopefully this will give us the optimal set of parameters. As we already expected, increasing the population size and the number of generations improves the results. The disadvantage is that the computation time (and probably the amount of memory needed) increases also. It is clear that here some sort of trade-off has to be made between solution quality and CPU time (and memory needed). The optimal value for the probability of mutation seems to lie around $8\%$ and the optimal value for the probability of recombination seems to lie around $80\%$. The optimal proportion of elite seems to lie around $15\%$. As we expected the results with loop detection are much better than without. With loop detection no significantly more CPU time is needed than without. So if loop detection is implemented, you should always use it.
+\newline
+\newline
+In the four last columns of table \ref{table:question_3} the optimal values for the mutation and crossover probability and elite proportion are used. The combined optimal values indeed result in very good results. It seems like it is more optimal to take the number of individuals equal to the number of generators instead of only half. Increasing the number of individuals does not double the amount of computation time in contrast to the number of generations. 
+
+
+% TO MAKE THIS TABLE EASY: SEE GOOGLE: LATEX CREATE TABLES ONLINE !!!!!!!!!
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+{\ul \textbf{\#IND}} & {\ul \textbf{\#GEN}} & {\ul \textbf{PR. MUT}} & {\ul \textbf{PR. CROS}} & {\ul \textbf{ELITE}} & {\ul \textbf{LP DET}} & {\ul \textbf{DIST.}} & {\ul \textbf{TIME {[}sec{]}}} \\ \hline
+\textbf{50}          & \textbf{100}         & \textbf{5 \%}          & \textbf{95 \%}          & \textbf{5 \%}        & \textbf{OFF}          & \textbf{10.99}       & \textbf{10.80}                 \\ \hline
+\textbf{100}         & df                   & df                     & df                      & df                   & df                    & \textbf{9.962}        & \textbf{12.56}                \\ \hline
+\textbf{200}         & df                   & df                     & df                      & df                   & df                    & \textbf{9.425}        & \textbf{15.09}                \\ \hline
+\textbf{500}         & df                   & df                     & df                      & df                   & df                    & \textbf{8.926}        & \textbf{25.18}                \\ \hline
+df                   & \textbf{200}         & df                     & df                      & df                   & df                    & \textbf{8.919}        & \textbf{21.83}                \\ \hline
+df                   & \textbf{500}         & df                     & df                      & df                   & df                    & \textbf{6.721}        & \textbf{52.53}                \\ \hline
+df                   & df                   & \textbf{0 \%}          & df                      & df                   & df                    & \textbf{10.95}       & \textbf{10.75}                \\ \hline
+df                   & df                   & \textbf{8 \%}          & df                      & df                   & df                    & \textbf{10.76}       & \textbf{10.76}                \\ \hline
+df                   & df                   & \textbf{15 \%}         & df                      & df                   & df                    & \textbf{11.21}       & \textbf{11.08}                \\ \hline
+df                   & df                   & df                     & \textbf{70 \%}          & df                   & df                    & \textbf{10.66}       & \textbf{9.499}                 \\ \hline
+df                   & df                   & df                     & \textbf{80 \%}          & df                   & df                    & \textbf{10.54}       & \textbf{10.41}                \\ \hline
+df                   & df                   & df                     & \textbf{90 \%}          & df                   & df                    & \textbf{10.70}       & \textbf{10.74}                \\ \hline
+df                   & df                   & df                     & \textbf{100 \%}         & df                   & df                    & \textbf{10.86}       & \textbf{10.82}                \\ \hline
+df                   & df                   & df                     & df                      & \textbf{0 \%}        & df                    & \textbf{15.61}       & \textbf{11.01}                \\ \hline
+df                   & df                   & df                     & df                      & \textbf{10 \%}       & df                    & \textbf{10.17}       & \textbf{9.855}                 \\ \hline
+df                   & df                   & df                     & df                      & \textbf{15 \%}       & df                    & \textbf{9.954}        & \textbf{9.787}                 \\ \hline
+df                   & df                   & df                     & df                      & \textbf{20 \%}       & df                    & \textbf{10.14}       & \textbf{9.520}                 \\ \hline
+df                   & df                   & df                     & df                      & \textbf{25 \%}       & df                    & \textbf{10.38}       & \textbf{9.661}                 \\ \hline
+df                   & df                   & df                     & df                      & df                   & \textbf{ON}           & \textbf{7.020}        & \textbf{10.48}                \\ \hline
+\textbf{100}         & \textbf{200}         & \textbf{8 \%}          & \textbf{80 \%}          & \textbf{15 \%}       & \textbf{OFF}          & \textbf{7.143}        & \textbf{22.82}                \\ \hline
+\textbf{200}         & \textbf{200}         & \textbf{8 \%}          & \textbf{80 \%}          & \textbf{15 \%}       & \textbf{OFF}          & \textbf{6.394}        & \textbf{28.01}                \\ \hline
+\textbf{100}         & \textbf{200}         & \textbf{8 \%}          & \textbf{80 \%}          & \textbf{15 \%}       & \textbf{ON}           & \textbf{5.357}        & \textbf{23.09}                \\ \hline
+\textbf{200}         & \textbf{200}         & \textbf{8 \%}          & \textbf{80 \%}          & \textbf{15 \%}       & \textbf{ON}           & \textbf{4.932}        & \textbf{28.62}                \\ \hline
+\end{tabular}
+\caption{Table with the results of some parameter tuning of the genetic algorithm. A path representation is used with order crossover and inversion mutation. For every set of parameters 10 runs are calculated. The template TSP problem with $67$ cities is used. The second last column contains the averages of the most optimal fitness values (minimal tour distance) found. The last column contains the averages of the computation time of a run. \texttt{df} stands for 'default value'. In the boxes with a \texttt{df} statement the default value from the first row is used. \#IND = \#INDIVIDUALS, \#GEN = \#GENERATIONS, PR. MUT = MUTATION PROBABILITY, PR. CROS = CROSSOVER PROBABILITY, LP DET = LOOP DETECTION, DIST = OPTIMAL DISTANCE. }
+\label{table:question_3}
+\end{table}
+
