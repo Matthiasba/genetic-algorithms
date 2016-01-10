@@ -19,8 +19,9 @@ function run_ga_path(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROS
 % ah1, ah2, ah3: axes handles to visualise tsp
 % SELECTION: parent selection strategy
 {NIND MAXGEN NVAR ELITIST STOP_PERCENTAGE PR_CROSS PR_MUT CROSSOVER LOCALLOOP}
-        t_loop = zeros(1,2);
-        for i_loop = 1:1
+        loop_n = 5
+        t_loop = zeros(loop_n,2);
+        for i_loop = 1:loop_n
             tic;
             GGAP = 1 - ELITIST;
             mean_fits=zeros(1,MAXGEN+1);

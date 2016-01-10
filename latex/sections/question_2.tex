@@ -1,10 +1,52 @@
 
 
-\section{Answer Question 2}
+\section{Template TSP algorithm}
 
-Write the answer for question 2 in this file
-\newline
-\newline
+This section discusses the parameter tuning and experimentation with the provided Matlab template. The results gained with this algorithm are used in the following sections to compare them with the results from path representation.
+
+\subsection{Parameter tuning}
+ The template uses the adjecency representation with crossover and inversion mutation. The parent selection mechanism is rank selection combined with elitism as survivor selection. Table \ref{table:question_2} shows the results of the performed parameter tuning on this algorithm. To produce these result the genetic algorithm was performed 10 times with each parameter setting on the \emph{rondrit067.tsp} file. The values shown in the last 2 columns (i.e. the best tour and the running time) are the averages of the results from those 10 runs. We started out with some standard parameters for the algorithm and then one by one tuned each parameter to find a good value. Then we combined the best results for each parameter. After some experimentation with this combination we settled on the parameters shown in the 3 to last row, with 20\% mutation chance, 50\% recombination and 10\% elitism.
+ 
+\subsection{Results}
+There are several interesting results that can be learned from table \ref{table:question_2}. Firstly, increasing the population only seams to have a minor impact on the execution time while there is significant benefit to the best tour found by the algorithm. For this particular problem, a population of 200-300 seems to be a reasonable trade-off between maximum fitness and execution time.
+
+Secondly the chance of recombination seems to be a very important factor for the genetic algorithm, with a good choice of parameter resulting not only in better fitness evolution but also in reduced execution time compared to our initial value. The big reduction in execution time (almost 25\%) when going from 85\% recombination chance to 50\% indicates that a large part of the execution time is spent on recombination.
+
+Thirdly, the parameters for mutation and elitism seem to have only a moderate impact on the performance of the genetic algorithm.
+
+Lastly we tested the impact of loop detection on the genetic algorithm. This method removes loops of maximum 3 edges from all paths, increasing their fitness. From the results, it is clear that this method greatly improves maximum fitness with only a very small increase in execution time. The biggest downside to loop-detection is that this is a very problem specific method, limiting the range of problems the genetic algorithm can be applied to.
+
+\begin{table}[!]
+\centering
+\begin{tabular}{ | l | l | l | l | l | l | l | l | }
+\hline
+{\ul \textbf{\#IND}} & {\ul \textbf{\#GEN}} & {\ul \textbf{PR. MUT}} & {\ul \textbf{PR. CROS}} & {\ul \textbf{ELITE}} & {\ul \textbf{LP DET}} & {\ul \textbf{DIST.}} & {\ul \textbf{TIME {[}sec{]}}} \\ \hline
+	100 & 100 & 10\% & 85\% & 5\% & OFF & 14.21 & 10.91 \\ \hline
+	150 & 100 & 10\% & 85\% & 5\% & OFF & 13.75 & 11.4 \\ \hline
+	200 & 100 & 10\% & 85\% & 5\% & OFF & 13.23 & 12.65 \\ \hline
+	300 & 100 & 10\%&  85\% & 5\% & OFF & 12.51 & 14.95 \\ \hline
+	200 & 150 & 10\% & 85\% & 5\% & OFF & 12.25 & 20.03 \\ \hline
+	200 & 200 & 10\% & 85\% & 5\% & OFF & 11.57 & 26.6 \\ \hline
+	200 & 150 & 20\% & 85\% & 5\% & OFF & 12.33 & 21.95 \\ \hline
+	200 & 150 & 30\% & 85\% & 5\% & OFF & 12.22 & 22.25 \\ \hline
+	200 & 150 & 10\% & 80\% & 5\% & OFF & 11.63 & 18.64 \\ \hline
+	200 & 150 & 10\% & 70\% & 5\% & OFF & 10.53 & 17.63 \\ \hline
+	200 & 150 & 10\%& 60\% & 5\% & OFF & 9.49 & 17.39 \\ \hline
+	200 & 150 & 10\% & 50\% & 5\% & OFF & 8.98 & 16.43 \\ \hline
+	200 & 150 & 10\% & 85\% & 5\% & OFF & 9.1 & 17.46 \\ \hline
+	200 & 150 & 10\% & 85\% & 10\% & OFF & 8.64 & 15.79 \\ \hline
+	200 & 150 & 10\% & 85\% & 15\% & OFF & 8.85 & 16.04 \\ \hline
+	200 & 200 & 20\% & 50\% & 5\% & OFF & 7.89 & 23.28 \\ \hline
+	200 & 200 & 20\% & 50\% & 10\% & OFF & 7.38 & 21.56 \\ \hline
+	200 & 150 & 20\% & 50\% & 10\% & OFF & 8.77 & 15.98 \\ \hline
+	200 & 200 & 20\% & 50\% & 10\% & ON & 4.83 & 21.71 \\ \hline
+	200 & 150 & 20\% & 50\% & 10\% & ON & 4.99 & 16.63 \\ \hline
+\end{tabular}
+\caption{Table with the results of some parameter tuning of the default genetic algorithm. The template TSP problem with $67$ cities is used. The second to last column contains the averages of the most optimal fitness values (minimal tour distance) found. The last column contains the averages of the computation time of a run. \#IND = \#INDIVIDUALS, \#GEN = \#GENERATIONS, PR. MUT = MUTATION PROBABILITY, PR. CROS = CROSSOVER PROBABILITY, LP DET = LOOP DETECTION, DIST = OPTIMAL DISTANCE. }
+\label{table:question_2}
+\end{table}
+
+
 Build the report by building the file $\texttt{ ../build/build\_report.tex}$
 \newline
 \newline

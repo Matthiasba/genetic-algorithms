@@ -18,8 +18,10 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
 % calculate distance matrix between each pair of cities
 % ah1, ah2, ah3: axes handles to visualise tsp
 {NIND MAXGEN NVAR ELITIST STOP_PERCENTAGE PR_CROSS PR_MUT CROSSOVER LOCALLOOP}
+
         t_loop = zeros(1,2);
         for i_loop = 1:1
+
             tic;
             GGAP = 1 - ELITIST;
             mean_fits=zeros(1,MAXGEN+1);
@@ -95,7 +97,7 @@ function run_ga(x, y, NIND, MAXGEN, NVAR, ELITIST, STOP_PERCENTAGE, PR_CROSS, PR
                 gen=gen+1;            
             end
             t_loop(i_loop,1)=toc;
-            t_loop(i_loop,2)=min(best(1, gen));
+            t_loop(i_loop,2)=min(best(1, :));
         end
         t_loop
         disp('Average time: ')
