@@ -5,6 +5,7 @@ function FitnV = FPS(ObjV)
 
 % ObjV is a column vector containing the lengths of the tours.
 inverted = 1./ObjV;
+inverted = inverted - min(inverted);
 sum_lengths = sum(inverted);
 
 % First calculate the ObjV(i)/sum(ObjV)

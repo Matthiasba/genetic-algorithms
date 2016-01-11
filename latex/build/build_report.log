@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.20)  11 JAN 2016 02:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.20)  11 JAN 2016 05:48
 entering extended mode
 **build_report.tex
 (C:\Users\jasper\Documents\genetic-algorithms\latex\build\build_report.tex
@@ -809,6 +809,12 @@ LaTeX Warning: Label `fig:fps_vraag5_off_gen' multiply defined.
 
 LaTeX Warning: Label `sub@fig:fps_vraag5_off_gen' multiply defined.
 
+
+LaTeX Warning: Label `fig:tourn_vraag5_off_gen' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:tourn_vraag5_off_gen' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -926,118 +932,118 @@ Overfull \hbox (39.81291pt too wide) in paragraph at lines 34--61
 
 [4] [5])
 (C:\Users\jasper\Documents\genetic-algorithms\latex\sections\question_4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--13
+Underfull \hbox (badness 10000) in paragraph at lines 6--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--13
+Underfull \hbox (badness 10000) in paragraph at lines 6--14
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 21.
+               Default added (so using `!tbp') on input line 22.
 
 
-<../figures/figures_question_4/belgium_tour_path.png, id=95, 465.74pt x 370.383
-74pt>
+<../figures/figures_question_4/belgium_tour_path.png, id=105, 465.74pt x 370.38
+374pt>
 File: ../figures/figures_question_4/belgium_tour_path.png Graphic file (type pn
 g)
  <use ../figures/figures_question_4/belgium_tour_path.png>
 Package pdftex.def Info: ../figures/figures_question_4/belgium_tour_path.png us
-ed on input line 25.
+ed on input line 26.
 (pdftex.def)             Requested size: 218.51326pt x 173.77519pt.
 
-Overfull \hbox (36.41841pt too wide) in paragraph at lines 25--26
+Overfull \hbox (36.41841pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 
  []
 
 
-<../figures/figures_question_4/belgium_tour_gen.png, id=97, 485.815pt x 375.402
-5pt>
+<../figures/figures_question_4/belgium_tour_gen.png, id=107, 485.815pt x 375.40
+25pt>
 File: ../figures/figures_question_4/belgium_tour_gen.png Graphic file (type png
 )
  <use ../figures/figures_question_4/belgium_tour_gen.png>
 Package pdftex.def Info: ../figures/figures_question_4/belgium_tour_gen.png use
-d on input line 32.
+d on input line 33.
 (pdftex.def)             Requested size: 245.8295pt x 189.95769pt.
 
-Overfull \hbox (40.97105pt too wide) in paragraph at lines 32--33
+Overfull \hbox (40.97105pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 33--33
+Underfull \hbox (badness 1460) in paragraph at lines 34--34
 []\OT1/cmr/m/n/10.95 (b) |The fit-ness val-ues (tour dis-tances)
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 33--33
+Underfull \hbox (badness 8019) in paragraph at lines 34--34
 \OT1/cmr/m/n/10.95 for the best(red), av-er-age(blue) and
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 40.
+               Default added (so using `!tbp') on input line 41.
 
 
-<../figures/figures_question_4/adj_vraag4_off_gen.png, id=98, 483.8075pt x 355.
-3275pt>
+<../figures/figures_question_4/adj_vraag4_off_gen.png, id=108, 483.8075pt x 355
+.3275pt>
 File: ../figures/figures_question_4/adj_vraag4_off_gen.png Graphic file (type p
 ng)
  <use ../figures/figures_question_4/adj_vraag4_off_gen.png>
 Package pdftex.def Info: ../figures/figures_question_4/adj_vraag4_off_gen.png u
-sed on input line 44.
+sed on input line 45.
 (pdftex.def)             Requested size: 204.85844pt x 150.45644pt.
 
-<../figures/figures_question_4/path_vraag4_off_gen.png, id=99, 479.7925pt x 357
-.335pt>
+<../figures/figures_question_4/path_vraag4_off_gen.png, id=109, 479.7925pt x 35
+7.335pt>
 File: ../figures/figures_question_4/path_vraag4_off_gen.png Graphic file (type 
 png)
  <use ../figures/figures_question_4/path_vraag4_off_gen.png>
 Package pdftex.def Info: ../figures/figures_question_4/path_vraag4_off_gen.png 
-used on input line 51.
+used on input line 52.
 (pdftex.def)             Requested size: 204.85844pt x 152.57146pt.
 
-Underfull \hbox (badness 6808) in paragraph at lines 52--52
+Underfull \hbox (badness 6808) in paragraph at lines 53--53
 \OT1/cmr/bx/n/10.95 com-pu-ta-tion time:357 sec-onds\OT1/cmr/m/n/10.95 .PR.
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 59.
+               Default added (so using `!tbp') on input line 60.
 
 
-<../figures/figures_question_4/adj_vraag4_on_gen.png, id=100, 483.8075pt x 355.
+<../figures/figures_question_4/adj_vraag4_on_gen.png, id=110, 483.8075pt x 355.
 3275pt>
 File: ../figures/figures_question_4/adj_vraag4_on_gen.png Graphic file (type pn
 g)
  <use ../figures/figures_question_4/adj_vraag4_on_gen.png>
 Package pdftex.def Info: ../figures/figures_question_4/adj_vraag4_on_gen.png us
-ed on input line 63.
+ed on input line 64.
 (pdftex.def)             Requested size: 204.85844pt x 150.45644pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 $[]$\OT1/cmr/bx/n/10.95 ,computation time:226 sec-
  []
 
 
-<../figures/figures_question_4/path_vraag4_on_gen.png, id=101, 478.78876pt x 36
+<../figures/figures_question_4/path_vraag4_on_gen.png, id=111, 478.78876pt x 36
 2.35374pt>
 File: ../figures/figures_question_4/path_vraag4_on_gen.png Graphic file (type p
 ng)
  <use ../figures/figures_question_4/path_vraag4_on_gen.png>
 Package pdftex.def Info: ../figures/figures_question_4/path_vraag4_on_gen.png u
-sed on input line 70.
+sed on input line 71.
 (pdftex.def)             Requested size: 204.85844pt x 155.04053pt.
 
-Underfull \hbox (badness 2913) in paragraph at lines 71--71
+Underfull \hbox (badness 2913) in paragraph at lines 72--72
 []\OT1/cmr/m/n/10.95 (b) |\OT1/cmr/bx/n/10.95 Path rep-re-sen-ta-tion (new de-
  []
 
@@ -1051,101 +1057,126 @@ h_vraag4_off_gen.png>])
 tex
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 13.
+               Default added (so using `!tbp') on input line 16.
 
-<../figures/question_5/FPS_off_gens.png, id=123, 445.665pt x 308.65312pt>
+<../figures/question_5/FPS_off_gens.png, id=136, 445.665pt x 308.65312pt>
 File: ../figures/question_5/FPS_off_gens.png Graphic file (type png)
 
 <use ../figures/question_5/FPS_off_gens.png>
 Package pdftex.def Info: ../figures/question_5/FPS_off_gens.png used on input l
-ine 17.
+ine 20.
 (pdftex.def)             Requested size: 204.85844pt x 141.87854pt.
 
-Underfull \hbox (badness 2486) in paragraph at lines 18--18
-\OT1/cmr/bx/n/10.95 tance found: $[]$, com-pu-ta-tion
- []
-
-<../figures/question_5/FPS_on_gens.png, id=124, 442.65375pt x 313.9228pt>
+<../figures/question_5/FPS_on_gens.png, id=137, 442.65375pt x 313.9228pt>
 File: ../figures/question_5/FPS_on_gens.png Graphic file (type png)
 
 <use ../figures/question_5/FPS_on_gens.png>
 Package pdftex.def Info: ../figures/question_5/FPS_on_gens.png used on input li
-ne 24.
+ne 27.
 (pdftex.def)             Requested size: 204.85844pt x 145.28282pt.
 
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.32 \begin{figure}{0.45\textwidth}
-                                   [!]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
 
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.32 \begin{figure}{0.45\textwidth}
-                                   [!]
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 35.
 
-<../figures/question_5/FPS_hist.png, id=125, 455.45157pt x 316.18124pt>
+<../figures/question_5/FPS_hist.png, id=138, 455.45157pt x 316.18124pt>
 File: ../figures/question_5/FPS_hist.png Graphic file (type png)
 
 <use ../figures/question_5/FPS_hist.png>
 Package pdftex.def Info: ../figures/question_5/FPS_hist.png used on input line 
-34.
-(pdftex.def)             Requested size: 455.24408pt x 316.04536pt.
-)
+37.
+(pdftex.def)             Requested size: 455.45045pt x 316.18047pt.
+ [8 <C:/Users/jasper/Documents/genetic-algorithms/latex/figures/figures_questio
+n_4/adj_vraag4_on_gen.png> <C:/Users/jasper/Documents/genetic-algorithms/latex/
+figures/figures_question_4/path_vraag4_on_gen.png>] [9 <C:/Users/jasper/Documen
+ts/genetic-algorithms/latex/figures/question_5/FPS_off_gens.png> <C:/Users/jasp
+er/Documents/genetic-algorithms/latex/figures/question_5/FPS_on_gens.png> <C:/U
+sers/jasper/Documents/genetic-algorithms/latex/figures/question_5/FPS_hist.png>
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 51.
+
+
+<../figures/question_5/tournament_off_gen.png, id=161, 429.85594pt x 341.77687p
+t>
+File: ../figures/question_5/tournament_off_gen.png Graphic file (type png)
+ <use ../figures/question_5/tournament_off_gen.png>
+Package pdftex.def Info: ../figures/question_5/tournament_off_gen.png used on i
+nput line 55.
+(pdftex.def)             Requested size: 204.85844pt x 162.88284pt.
+
+<../figures/question_5/tournament_on_on.png, id=162, 425.33907pt x 340.27126pt>
+File: ../figures/question_5/tournament_on_on.png Graphic file (type png)
+<use ../figures/question_5/tournament_on_on.png>
+Package pdftex.def Info: ../figures/question_5/tournament_on_on.png used on inp
+ut line 62.
+(pdftex.def)             Requested size: 204.85844pt x 163.88908pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 71.
+
+
+<../figures/question_5/tournament_off_hist.png, id=163, 420.06938pt x 337.26pt>
+File: ../figures/question_5/tournament_off_hist.png Graphic file (type png)
+<use ../figures/question_5/tournament_off_hist.png>
+Package pdftex.def Info: ../figures/question_5/tournament_off_hist.png used on 
+input line 73.
+(pdftex.def)             Requested size: 420.06836pt x 337.25917pt.
+ [10 <C:/Users/jasper/Documents/genetic-algorithms/latex/figures/question_5/tou
+rnament_off_gen.png> <C:/Users/jasper/Documents/genetic-algorithms/latex/figure
+s/question_5/tournament_on_on.png>])
 (C:\Users\jasper\Documents\genetic-algorithms\latex\sections\references.tex)
-[8 <C:/Users/jasper/Documents/genetic-algorithms/latex/figures/figures_question
-_4/adj_vraag4_on_gen.png> <C:/Users/jasper/Documents/genetic-algorithms/latex/f
-igures/figures_question_4/path_vraag4_on_gen.png>] [9 <C:/Users/jasper/Document
-s/genetic-algorithms/latex/figures/question_5/FPS_off_gens.png> <C:/Users/jaspe
-r/Documents/genetic-algorithms/latex/figures/question_5/FPS_on_gens.png> <C:/Us
-ers/jasper/Documents/genetic-algorithms/latex/figures/question_5/FPS_hist.png>]
 (C:\Users\jasper\Documents\genetic-algorithms\latex\sections\appendix.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 17.
 
 (C:\Users\jasper\Documents\genetic-algorithms\latex\code_appendix\order_crossov
-er.m
+er.m [11 <C:/Users/jasper/Documents/genetic-algorithms/latex/figures/question_5
+/tournament_off_hist.png>]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 15.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 15.
- [10])
+) [12]
 (C:\Users\jasper\Documents\genetic-algorithms\latex\code_appendix\tspfun_path.m
-)) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
-
-(C:\Users\jasper\Documents\genetic-algorithms\latex\build\build_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+) (C:\Users\jasper\Documents\genetic-algorithms\latex\code_appendix\FPS.m)
+[13]
+(C:\Users\jasper\Documents\genetic-algorithms\latex\code_appendix\tournament_se
+lection.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+ [14]))
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+ (C:\Users\jasper\Documents\genetic-algorithms\latex\build\build_report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `build_report.out' has not changed.
-(rerunfilecheck)             Checksum: 1DA5CAE6812858CB07A4ED3F08D1E69C;483.
+(rerunfilecheck)             Checksum: 6D0129D16666B0D1F46B52D1B0CDC7C0;600.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 29251 strings out of 493706
- 659918 string characters out of 3144580
- 913120 words of memory out of 3000000
- 31937 multiletter control sequences out of 15000+200000
+ 29392 strings out of 493706
+ 662613 string characters out of 3144580
+ 957120 words of memory out of 3000000
+ 31993 multiletter control sequences out of 15000+200000
  16108 words of font info for 62 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 57i,9n,76p,1366b,2245s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,9n,76p,1366b,2251s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1159,9 +1190,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on build_report.pdf (11 pages, 796309 bytes).
+Output written on build_report.pdf (15 pages, 891868 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 422 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
